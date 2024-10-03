@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist Music Playlists</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      width: 80%;
+      max-width: 800px;
+    }
+
+    .playlist {
+      background-color: #181818;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #1DB954;
+    }
+
+    .scrollable {
+      max-height: 300px;
+      overflow-y: auto;
+      padding-right: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      padding: 10px;
+      border-bottom: 1px solid #333;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    ul li:last-child {
+      border-bottom: none;
+    }
+
+    .track-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .track-title {
+      font-weight: bold;
+    }
+
+    .track-artist {
+      font-size: 12px;
+      color: #bbb;
+    }
+
+    .play-button {
+      background-color: #1DB954;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .play-button:hover {
+      background-color: #1ed760;
+    }
+
+    .nav-button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .nav-button:hover {
+      background-color: #444;
+    }
+
+    .link-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="playlist">
+      <h2>Joji Playlist</h2>
+      <div class="scrollable">
+        <ul>
+          <li>
+            <div class="track-info">
+              <span class="track-title">Glimpse of Us</span>
+              <span class="track-artist">Joji</span>
+            </div>
+            <button class="play-button">Play</button>
+          </li>
+          <li>
+            <div class="track-info">
+              <span class="track-title">Sanctuary</span>
+              <span class="track-artist">Joji</span>
+            </div>
+            <button class="play-button">Play</button>
+          </li>
+          <li>
+            <div class="track-info">
+              <span class="track-title">Slow Dancing in the Dark</span>
+              <span class="track-artist">Joji</span>
+            </div>
+            <button class="play-button">Play</button>
+          </li>
+          <li>
+            <div class="track-info">
+              <span class="track-title">Run</span>
+              <span class="track-artist">Joji</span>
+            </div>
+            <button class="play-button">Play</button>
+          </li>
+          <li>
+            <div class="track-info">
+              <span class="track-title">Ew</span>
+              <span class="track-artist">Joji</span>
+            </div>
+            <button class="play-button">Play</button>
+          </li>
+          <li>
+            <div class="track-info">
+              <span class="track-title">Will He</span>
+              <span class="track-artist">Joji</span>
+            </div>
+            <button class="play-button">Play</button>
+          </li>
+          <li>
+            <div class="track-info">
+              <span class="track-title">YEAH RIGHT</span>
+              <span class="track-artist">Joji</span>
+            </div>
+            <button class="play-button">Play</button>
+          </li>
+          <li>
+            <div class="track-info">
+              <span class="track-title">Like You Do</span>
+              <span class="track-artist">Joji</span>
+            </div>
+            <button class="play-button">Play</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="playlist">
+      <h2>Playlist 2</h2>
+      <div class="scrollable">
+        <ul>
+          <li>
+            <div class="track-info">
+              <span class="track-title">Song Title 4</span>
+              <span class="track-artist">Artist 4</span>
+            </div>
+            <button class="play-button">Play</button>
+          </li>
+          <li>
+            <div class="track-info">
+              <span class="track-title">Song Title 5</span>
+              <span class="track-artist">Artist 5</span>
+            </div>
+            <button class="play-button">Play</button>
+          </li>
+          <li>
+            <div class="track-info">
+              <span class="track-title">Song Title 6</span>
+              <span class="track-artist">Artist 6</span>
+            </div>
+            <button class="play-button">Play</button>
+          </li>
+          <!-- Agregar más canciones a la segunda lista -->
+          <li>
+            <div class="track-info">
+              <span class="track-title">Song Title 7</span>
+              <span class="track-artist">Artist 7</span>
+            </div>
+            <button class="play-button">Play</button>
+          </li>
+          <li>
+            <div class="track-info">
+              <span class="track-title">Song Title 8</span>
+              <span class="track-artist">Artist 8</span>
+            </div>
+            <button class="play-button">Play</button>
+          </li>
+          <li>
+            <div class="track-info">
+              <span class="track-title">Song Title 9</span>
+              <span class="track-artist">Artist 9</span>
+            </div>
+            <button class="play-button">Play</button>
+          </li>
+          <li>
+            <div class="track-info">
+              <span class="track-title">Song Title 10</span>
+              <span class="track-artist">Artist 10</span>
+            </div>
+            <button class="play-button">Play</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Link to Index2.html -->
+    <div class="link-container">
+      <a href="Index2.html">
+        <button class="nav-button">Go to Index2</button>
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>
